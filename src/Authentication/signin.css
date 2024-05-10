@@ -1,0 +1,13 @@
+.signinPlaceholder::placeholder{
+    text-align: center;
+}
+
+
+.text-with-borders{
+    height: 1px;
+    width: 115px;
+    /* background-color: #fff; */
+    border-bottom: 1px solid white;
+    padding-top: 13px;
+    margin: 0px 5px;
+}

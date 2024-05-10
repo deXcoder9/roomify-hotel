@@ -1,1 +1,2 @@
 1. use text for headers - 15px
+2. input field background - bg-[#33334b]
