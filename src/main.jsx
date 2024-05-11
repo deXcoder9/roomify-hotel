@@ -9,6 +9,9 @@ import Home from './components/homepage/Home.jsx';
 import App from './App.jsx';
 import AuthProvider from './auth provider/AuthProvider.jsx';
 import SignIn from './Authentication/SignIn.jsx';
+import Rooms from './components/roomPage/Rooms.jsx';
+import RoomDetails from './components/roomPage/RoomDetails.jsx';
+import Spinner from './spinner/Spinner.jsx';
 
 
 const router = createBrowserRouter([
@@ -19,6 +22,15 @@ const router = createBrowserRouter([
       {
       path: '/',
       element: <Home></Home>
+      },
+      {
+        path: '/rooms',
+        element: <Rooms></Rooms>
+      },
+      {
+        path: '/roomDetails/:id',
+        element: <RoomDetails></RoomDetails>,
+        loader: () => fetch("http://localhost:5000/rooms")
       }
     ]
   },
@@ -33,7 +45,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-     <RouterProvider router={router} />
+     <RouterProvider fallbackElement={ <Spinner />} router={router} />
     </AuthProvider>
   </React.StrictMode>,
 )

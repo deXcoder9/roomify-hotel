@@ -63,7 +63,7 @@ const SignIn = () => {
           {"\" Unlock a world of possibilities by signing in to your account. Whether it is managing your tasks, staying connected with friends, or accessing exclusive content, your journey begins here. Do not have an account yet? Join us and experience seamless access to our platform  features. Let us make every moment count together \""}
         </p>
       </div>
-      <div className="bg-[#0e0f24] flex flex-col items-center justify-center flex-1 relative">
+      <div className="bg-[#0e0f24] flex flex-col items-center bg- justify-c flex-1 relative">
         {toggle ? (
           <p
             onClick={handleToggleAuthentication}
@@ -79,7 +79,8 @@ const SignIn = () => {
             Sign up
           </p>
         )}
-        <img src={logo} className="h-28 mb-5" alt="" />
+        {/* offsite element */}
+        <img src={logo} className="h-28 mb-5 " alt="" />
         {toggle ? (
           <h1 className="text-3xl">Create new account</h1>
         ) : (

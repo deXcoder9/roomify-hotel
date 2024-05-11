@@ -11,7 +11,7 @@ const NavBar = () => {
         </div>
         <div className="flex-none ">
           <ul className="menu menu-horizontal px-1">
-            <li><a className="text-[15px] hover:text-white ">Rooms</a></li>
+            <li><Link to='/rooms' className="text-[15px] hover:text-white ">Rooms</Link></li>
             <li><Link to="/signin" className="text-[15px] hover:text-white ">Sign Up</Link></li>
             
           </ul>

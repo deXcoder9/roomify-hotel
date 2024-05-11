@@ -1,0 +1,212 @@
+[
+  {
+    "room_image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "This cozy single room offers a serene retreat with a view of the garden. Furnished with a comfortable bed, writing desk, and soft lighting, it's perfect for solo travelers seeking tranquility. The room also features a modern ensuite bathroom with complimentary toiletries.",
+    "price": 50,
+    "room_size": "Single",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Indulge in luxury in this spacious double room boasting an ensuite bathroom. With plush bedding, elegant furnishings, and ample natural light, it provides a haven of comfort and relaxation. Wake up refreshed and rejuvenated to start your day exploring the city.",
+    "price": 80,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Experience opulence in this luxurious suite featuring a private balcony with stunning city skyline views. The suite offers refined decor, a king-sized bed, a separate living area, and a lavish bathroom with a soaking tub. Enjoy unparalleled comfort and elegance during your stay.",
+    "price": 150,
+    "room_size": "Suite",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Ideal for friends or family, this comfortable twin room provides a cozy ambiance and essential amenities for a pleasant stay. Relax in the inviting atmosphere, complete with twin beds, a work desk, and a modern ensuite bathroom. Enjoy convenience and comfort at an affordable price.",
+    "price": 90,
+    "room_size": "Twin",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Embrace budget-friendly accommodation in this dormitory featuring individual lockers and cozy bunk beds. Perfect for solo travelers or groups, it offers a communal atmosphere and essential amenities for a comfortable stay. Enjoy affordability without compromising on quality.",
+    "price": 20,
+    "room_size": "Dormitory",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1512918580421-b2feee3b85a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Indulge in luxury with a stay in this deluxe ocean-view room boasting a king-sized bed and panoramic vistas of the sea. The room exudes sophistication with its modern decor, plush furnishings, and upscale amenities. Experience tranquility and elegance in every detail.",
+    "price": 200,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Escape to a quaint cottage-style room featuring a charming fireplace and cozy ambiance. Perfect for a romantic getaway, the room offers rustic decor, a comfortable bed, and all the comforts of home. Relax by the fire and create unforgettable memories during your stay.",
+    "price": 120,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Immerse yourself in nature with a stay in this rustic cabin, offering a peaceful retreat surrounded by scenic beauty. The cabin features wooden interiors, a comfortable bed, and essential amenities for a cozy stay. Experience serenity and simplicity in the heart of nature.",
+    "price": 100,
+    "room_size": "Cabin",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1618221257490-1d703817596c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Discover charm and character in this elegant loft boasting exposed brick walls and stylish decor. The loft offers a comfortable bed, a sitting area, and modern amenities for a relaxing stay. Enjoy a unique blend of history and luxury in this distinctive accommodation.",
+    "price": 80,
+    "room_size": "Loft",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Experience unparalleled luxury in this elegant penthouse suite featuring a private jacuzzi and breathtaking city views. The suite offers refined decor, upscale furnishings, and exclusive amenities for an indulgent stay. Elevate your travel experience with a stay in this exquisite accommodation.",
+    "price": 300,
+    "room_size": "Suite",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Enjoy modern comfort in this sleek studio apartment boasting city views and contemporary decor. The apartment offers a fully equipped kitchen, a comfortable bed, and a spacious living area for a relaxing stay. Experience convenience and style in the heart of the city.",
+    "price": 120,
+    "room_size": "Studio",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1508253578933-20b529302151?q=80&w=1361&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Immerse yourself in Japanese tradition with a stay in this traditional tatami room featuring futon beds and minimalist decor. The room offers a serene ambiance, tatami flooring, and sliding doors for an authentic experience. Relax and rejuvenate in this tranquil retreat.",
+    "price": 80,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1603072387865-e48a022fc541?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Step back in time with a stay in this Victorian-style room adorned with antique furnishings and elegant decor. The room offers a comfortable bed, ornate details, and period charm for a unique and memorable stay. Experience the romance and nostalgia of a bygone era.",
+    "price": 150,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1559599238-308793637427?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Escape to nature with a stay in this eco-friendly treehouse offering panoramic forest views and sustainable design. The treehouse features rustic-chic decor, a comfortable bed, and a private balcony for enjoying the beauty of the surroundings. Experience harmony with nature in this enchanting retreat.",
+    "price": 180,
+    "room_size": "Treehouse",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1560067174-c5a3a8f37060?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Feel at home in this modern apartment boasting a full kitchen, a spacious living area, and stylish decor. Perfect for extended stays or family vacations, the apartment offers comfort and convenience in a central location. Experience the freedom of apartment living during your travels.",
+    "price": 160,
+    "room_size": "Apartment",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1582582484783-0a7a9e45b0d6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Experience old-world charm in this classic European-style room featuring a four-poster bed and elegant furnishings. The room offers a cozy ambiance, ornate details, and timeless appeal for a memorable stay. Immerse yourself in luxury and romance in this enchanting accommodation.",
+    "price": 130,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1582582484783-0a7a9e45b0d6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Discover industrial-chic style in this chic loft boasting exposed beams and eclectic decor. The loft offers a comfortable bed, a sitting area, and urban views for a unique and inspiring stay. Experience creativity and comfort in this one-of-a-kind accommodation.",
+    "price": 90,
+    "room_size": "Loft",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1559599238-308793637427?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Maximize space and comfort in this minimalist capsule room designed for solo travelers. The room offers a cozy capsule bed, personal storage, and essential amenities for a comfortable stay. Enjoy privacy and convenience at an affordable price.",
+    "price": 30,
+    "room_size": "Capsule",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1581404635299-f473ede8699a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Experience lakeside serenity in this tranquil cabin featuring a private dock and scenic views. The cabin offers rustic charm, modern amenities, and outdoor seating for enjoying the beauty of the surroundings. Relax and recharge in this idyllic lakeside retreat.",
+    "price": 140,
+    "room_size": "Cabin",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1581404569456-a2e7007c3979?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Escape to the charm of this cozy attic room featuring sloped ceilings and dormer windows. The room offers a comfortable bed, quaint decor, and a peaceful ambiance for a relaxing stay. Experience warmth and hospitality in this intimate attic retreat.",
+    "price": 70,
+    "room_size": "Attic",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1560067174-e553b3647603?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Enjoy family-friendly accommodations in this spacious suite featuring separate bedrooms and a shared living area. Perfect for families or groups, the suite offers comfort, convenience, and essential amenities for a memorable stay. Create lasting memories together in this welcoming home away from home.",
+    "price": 200,
+    "room_size": "Suite",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.unsplash.com/photo-1559599242-651c4e085efb?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Step into the past with a stay in this art deco themed room adorned with vintage furnishings and retro decor. The room offers a comfortable bed, unique artwork, and period charm for a nostalgic experience. Immerse yourself in the glamour and allure of a bygone era.",
+    "price": 110,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Experience coastal luxury in this contemporary beachfront villa boasting a private pool and stunning ocean views. The villa offers spacious interiors, upscale amenities, and outdoor seating for enjoying the sea breeze. Indulge in seaside serenity and sophistication during your stay.",
+    "price": 400,
+    "room_size": "Villa",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Immerse yourself in history with a stay in this historic guesthouse featuring period charm and modern comforts. The guesthouse offers cozy accommodations, antique furnishings, and a welcoming atmosphere for a memorable stay. Experience the elegance and hospitality of a bygone era.",
+    "price": 120,
+    "room_size": "Guesthouse",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Experience tranquility in this sunny garden room featuring an outdoor seating area and lush greenery. The room offers a comfortable bed, garden views, and a peaceful ambiance for a relaxing stay. Escape the hustle and bustle and unwind in this idyllic garden retreat.",
+    "price": 90,
+    "room_size": "Double",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/4112557/pexels-photo-4112557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Escape to the countryside with a stay in this rustic farmhouse boasting modern amenities and pastoral views. The farmhouse offers cozy accommodations, farmhouse decor, and outdoor space for enjoying the beauty of the surroundings. Experience rural charm and relaxation in this inviting retreat.",
+    "price": 180,
+    "room_size": "Farmhouse",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/10099314/pexels-photo-10099314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Savor seaside living in this spacious beach house just steps from the shore. The beach house offers coastal charm, modern amenities, and panoramic views of the ocean. Enjoy beachfront relaxation and outdoor adventures during your stay in this coastal paradise.",
+    "price": 250,
+    "room_size": "Beach House",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/7168104/pexels-photo-7168104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Experience bohemian style in this colorful yurt featuring vibrant decor and eclectic furnishings. The yurt offers a cozy bed, a sitting area, and outdoor space for enjoying nature. Immerse yourself in creativity and comfort in this unique and inspiring accommodation.",
+    "price": 60,
+    "room_size": "Yurt",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/12870141/pexels-photo-12870141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Indulge in luxury with a stay in this elegant manor house surrounded by landscaped gardens and rolling hills. The manor house offers refined accommodations, period details, and upscale amenities for a sophisticated stay. Experience grandeur and elegance in this timeless estate.",
+    "price": 300,
+    "room_size": "Manor House",
+    "availability": "Available"
+  },
+  {
+    "room_image": "https://images.pexels.com/photos/4112557/pexels-photo-4112557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Escape to the countryside with a stay in this rustic farmhouse boasting modern amenities and pastoral views. The farmhouse offers cozy accommodations, farmhouse decor, and outdoor space for enjoying the beauty of the surroundings. Experience rural charm and relaxation in this inviting retreat.",
+    "price": 180,
+    "room_size": "Farmhouse",
+    "availability": "Available"
+  }
+]

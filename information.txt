@@ -1,2 +1,9 @@
 1. use text for headers - 15px
 2. input field background - bg-[#33334b]
+
+room image
+room description
+Price per night
+room size
+availablility
+review
