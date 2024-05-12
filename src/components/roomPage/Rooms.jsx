@@ -45,7 +45,7 @@ const handleBookFilter = (filter) => {
 
   return (
     <div className="lg:p-4 flex flex-col items-center ">
-      <select id="listMenu" onChange={()=> getOptionValue()} className="select select-ghost w-full max-w-xs bg-black">
+      <select defaultValue="all" id="listMenu" onChange={()=> getOptionValue()} className="select select-ghost w-full max-w-xs bg-black">
         <option value="all" className="bg-transparent " > all </option>
         <option value="underHundred" className="bg-transparent " >under $100 </option>
         <option value="underTwohundred" className="bg-transparent">under $200</option>

@@ -12,6 +12,7 @@ import SignIn from './Authentication/SignIn.jsx';
 import Rooms from './components/roomPage/Rooms.jsx';
 import RoomDetails from './components/roomPage/RoomDetails.jsx';
 import Spinner from './spinner/Spinner.jsx';
+import UserBookings from './components/mybookings/UserBookings.jsx';
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         path: '/roomDetails/:id',
         element: <RoomDetails></RoomDetails>,
         loader: () => fetch("http://localhost:5000/rooms")
+      },
+      {
+        path: '/bookings',
+        element: <UserBookings></UserBookings>
       }
     ]
   },

@@ -21,6 +21,9 @@ const SignIn = () => {
       console.log('account creation')
       handleRegistrationAuth(email, password)
       .then((result) =>{
+        setTimeout(function () {
+          window.location.href = "/";
+      }, 500);
         console.log(result.user)
       }).catch(error => console.log(error.message))
     }else{
@@ -28,6 +31,9 @@ const SignIn = () => {
       handleLoginAuth(email, password)
       .then(result => {
         alert('User Logged In')
+        setTimeout(function () {
+          window.location.href = "/";
+      }, 500);
         console.log(result.user)
       }).catch(error => console.log(error.message))
     }
@@ -42,6 +48,9 @@ const SignIn = () => {
     handleGoogleLogin()
       .then((result) => {
         alert("logged in through google");
+        setTimeout(function () {
+          window.location.href = "/";
+      }, 500);
         console.log("google Login:", result.user);
       })
       .catch((error) => console.log(error));
