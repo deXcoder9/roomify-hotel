@@ -45,6 +45,7 @@ const UserBookings = () => {
         const newId = currentId;
         // console.log(newId)
         const bookedRoomTime = document.getElementById("updatedBookedDate").value;
+        console.log(bookedRoomTime);
 
         fetch(`http://localhost:5000/bookings/${newId}`, {
             method: "PATCH",
@@ -76,9 +77,9 @@ const UserBookings = () => {
     return (
         <div>
 
-            <div className='min-h-screen '>
+            <div className=' min-h-screen'>
                 <div className="overflow-x-auto mx-auto max-w-[1240px]">
-                    <table className="table">
+                    <table className="table h-full ">
                         {/* head */}
                         <thead>
                             <tr>
