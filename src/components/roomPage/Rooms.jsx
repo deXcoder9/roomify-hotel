@@ -9,7 +9,10 @@ const Rooms = () => {
     fetch('http://localhost:5000/rooms')
       .then(res => res.json())
       // .then(data => console.log(data))
-      .then(data => setRooms(data))
+      .then(data => {
+        setRooms(data)
+        setDisplayRooms(data)
+      })
   }, [])
 
   const getOptionValue = () => {
