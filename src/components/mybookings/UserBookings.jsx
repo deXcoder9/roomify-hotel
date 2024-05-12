@@ -22,8 +22,7 @@ const UserBookings = () => {
         document.getElementById('my_modal_5').showModal()
     }
     let currentId;
-    const handleDeleteBookedRoom = id => {
-        // console.log(id)
+    const handleDeleteBookedRoom = () => {
         const newId = currentDeleteId;
 
         fetch(`http://localhost:5000/bookings/${newId}`, {
@@ -40,12 +39,9 @@ const UserBookings = () => {
 
     const handleUpdateModal = (id) => {
         currentId = id;
-        // console.log(currentId)
-        // console.log(id)
         document.getElementById('my_modal_4').showModal()
     }
-    const handleUpdateDateBtn = (id) => {
-        // console.log( parseInt(currentId))
+    const handleUpdateDateBtn = () => {
         const newId = currentId;
         // console.log(newId)
         const bookedRoomTime = document.getElementById("updatedBookedDate").value;
@@ -104,11 +100,6 @@ const UserBookings = () => {
                                 bookings.map(sx => <SingleBooking key={sx._id} sx={sx} openModalDelete={openModalDelete} handleDeleteBookedRoom={handleDeleteBookedRoom}  handleUpdateModal={handleUpdateModal} handleUpdateDateBtn={handleUpdateDateBtn}></SingleBooking>)
                             }
                         </tbody>
-                        {/* foot */}
-                        <tfoot>
-                            <tr>
-                            </tr>
-                        </tfoot>
 
                     </table>
                 </div>

@@ -1,70 +1,10 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { AuthContext } from "../../auth provider/AuthProvider"
-import { Link } from "react-router-dom"
 
 const SingleBooking = ({ sx,handleUpdateModal,handleDeleteBookedRoom, openModalDelete }) => {
     const { userInfo } = useContext(AuthContext)
-    const [showModal, setShowModal] = useState(false)
 
-    // var currentId = sx._id
-    // console.log(currentId)
-    // const handleDeleteBookedRoom = (id) => {
-    //     console.log("hii", id)
-    //     // fetch(`http://localhost:5000/bookings/${id}`, {
-    //     //     method: "DELETE"
-    //     // })
-    //     //     .then(res => res.json())
-    //     //     .then(data => {
-    //     //         if (data.deletedCount > 0) {
-    //     //             const newBookings = bookings.filter(booking => booking._id !== id)
-    //     //             setBookings(newBookings)
-    //     //         }
-    //     //     })
-    // }
-
-    // const handleUpdateModal = (id) => {
-    //     document.getElementById('my_modal_4').showModal()
-    //     // console.log(id)
-    //     // const openModal = true
-    //     // setShowModal(openModal)
-    //     // console.log(showModal)
-    // }
-
-    // const handleUpdateDateBtn = () => {
-    //     console.log(currentId)
-        // const bookedRoomTime = document.getElementById("updatedBookedDate").value;
-
-        // fetch(`http://localhost:5000/bookings/${id}`, {
-        //     method: "PATCH",
-        //     headers: {
-        //         "Content-Type": "application/json"
-        //     },
-        //     body: JSON.stringify({
-        //         bookedRoomDate: bookedRoomTime
-        //     })
-        // })
-        //    .then(res => res.json())
-        //    .then(data => {
-        //     console.log(data)
-        //     console.log(data)
-        //         if (data.modifiedCount ) {
-        //             Swal.fire({
-        //               title: "Success!",
-        //               text: "Booked room's date updated successfull",
-        //               icon: "success",
-        //               confirmButtonText: "Done",
-        //             });
-        //     // const remaining = bookings.filter(booking => booking._id !== id)
-        //     // const updated = bookings.find(booking => booking._id === id);
-        //     // const newBookings = [updated, ...remaining];  
-        //     // setBookings(newBookings)
-        //           }
-        //     })
-
-    // }
-    // const o1 () => {
-    //         document.getElementById('my_modal_5').showModal()
-    //     }
+   
     return (
         <tr key={sx._id} >
             <th>
@@ -84,7 +24,7 @@ const SingleBooking = ({ sx,handleUpdateModal,handleDeleteBookedRoom, openModalD
                                     {/* if there is a button in form, it will close the modal */}
                                     <div>
                                         <button className="btn">Close</button>
-                                        <button onClick={() => handleDeleteBookedRoom(sx._id)} className="btn">Confirm</button>
+                                        <button onClick={() => handleDeleteBookedRoom()} className="btn">Confirm</button>
                                     </div>
                                 </form>
                             </div>
