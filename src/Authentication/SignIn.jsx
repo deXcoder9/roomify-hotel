@@ -4,6 +4,7 @@ import googleLogo from "../assets/googleLogo.png";
 import "./signin.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../auth provider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const SignIn = () => {
   const { handleGoogleLogin, handleRegistrationAuth, handleLoginAuth } = useContext(AuthContext);
@@ -57,7 +58,10 @@ const SignIn = () => {
   };
   return (
     <div className=" min-h-screen flex justify-center  ">
-      <div className="bg-[#23243a] flex flex-col items-start justify-end  lg:w-2/5 relative ">
+      <Helmet>
+        <title>Sign up || Sign In</title>
+      </Helmet>
+      <div className="bg-[#23243a]  lg:flex-col items-start justify-end  lg:w-2/5 relative  hidden lg:flex  ">
         <Link to="/">
           <div className="flex items-center absolute top-3 left-5">
             <img src={logo} className="h-14" />
@@ -89,7 +93,7 @@ const SignIn = () => {
           </p>
         )}
         {/* offsite element */}
-        <img src={logo} className="h-28 mb-5 " alt="" />
+        <img src={logo} className="lg:h-28 h-20 mt-12  mb-5 " alt="" />
         {toggle ? (
           <h1 className="text-3xl">Create new account</h1>
         ) : (
@@ -132,9 +136,8 @@ const SignIn = () => {
             )}
           </div>
         </form>
-        <div className="flex mt-4">
-          {" "}
-          <div className="text-with-borders"> </div>{" "}
+        <div className=" mt-4 hidden md:flex">
+          <div className="text-with-borders "> </div>{" "}
           <div className="text-with-lines text-sm">OR CONTINUE WITH</div>
           <div className="text-with-borders"></div>{" "}
         </div>
@@ -142,7 +145,7 @@ const SignIn = () => {
           onClick={handleWithGoogleLogin}
           className="lg:w-[400px] mt-4 cursor-pointer "
         >
-          <div className="flex items-center bg-[#33334b] border-[#5840ff] border-[2px] justify-center py-[2px] rounded-lg ">
+          <div className="flex items-center bg-[#33334b] border-[#5840ff] px-4 border-[2px] justify-center py-[2px] rounded-lg ">
             <img className="h-10" src={googleLogo} alt="" />
             <p>Google</p>
           </div>

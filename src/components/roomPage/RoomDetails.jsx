@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, useLoaderData, useParams } from 'react-router-dom'
 import { AuthContext } from '../../auth provider/AuthProvider'
+import { Helmet } from 'react-helmet'
 
 const RoomDetails = () => {
   const {userInfo} = useContext(AuthContext) 
@@ -60,6 +61,9 @@ const RoomDetails = () => {
   }
   return (
     <div className='min-h-screen flex place-items-center'>
+      <Helmet>
+        <title>Room Details</title>
+      </Helmet>
       {
         specificRoom.map(room => <div key={room._id} className='flex place-items-center space-x-12 p-10'>
           <div className='w-[]'>

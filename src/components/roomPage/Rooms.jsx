@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import SingleRoom from "./SingleRoom"
+import { Helmet } from "react-helmet";
 
 const Rooms = () => {
   const [rooms, setRooms] = useState([])
@@ -48,6 +49,9 @@ const handleBookFilter = (filter) => {
 
   return (
     <div className="lg:p-4 flex flex-col items-center ">
+      <Helmet>
+        <title>Rooms</title>
+      </Helmet>
       <select defaultValue="all" id="listMenu" onChange={()=> getOptionValue()} className="select select-ghost w-full max-w-xs bg-black">
         <option value="all" className="bg-transparent " > all </option>
         <option value="underHundred" className="bg-transparent " >under $100 </option>

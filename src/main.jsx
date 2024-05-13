@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
+import {createBrowserRouter,RouterProvider,
 } from "react-router-dom";
 import Home from './components/homepage/Home.jsx';
 import App from './App.jsx';
@@ -13,11 +11,14 @@ import Rooms from './components/roomPage/Rooms.jsx';
 import RoomDetails from './components/roomPage/RoomDetails.jsx';
 import Spinner from './spinner/Spinner.jsx';
 import UserBookings from './components/mybookings/UserBookings.jsx';
+import ErrorPage from './error page/ErrorPage.jsx';
+import PrivateRoute from './private routee/PrivateRoute.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement:<ErrorPage></ErrorPage>,
     element: <App></App>,
     children: [
       {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/bookings',
-        element: <UserBookings></UserBookings>
+        element: <PrivateRoute><UserBookings></UserBookings></PrivateRoute>
       }
     ]
   },

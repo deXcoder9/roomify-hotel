@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../../auth provider/AuthProvider'
 import Swal from "sweetalert2";
 import SingleBooking from './SingleBooking';
+import { Helmet } from 'react-helmet';
 // import "sweetalert2/src/sweetalert2.scss";
 
 const UserBookings = () => {
@@ -76,6 +77,9 @@ const UserBookings = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Bookings</title>
+            </Helmet>
 
             <div className=' min-h-screen'>
                 <div className="overflow-x-auto mx-auto max-w-[1240px]">
