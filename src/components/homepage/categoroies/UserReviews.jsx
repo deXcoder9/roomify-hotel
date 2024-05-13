@@ -47,7 +47,7 @@ const UserReviews = () => {
             <h1 className='text-red-800'> name 2</h1>
             </div></SwiperSlide> */}
             {
-              reviews.map(rev =>  <SwiperSlide>
+              reviews.map(rev =>  <SwiperSlide key={rev._id}>
                 <div className='grid place-items-center h-full'>
                   <div>
 
