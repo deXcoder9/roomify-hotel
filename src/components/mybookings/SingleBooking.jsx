@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { AuthContext } from "../../auth provider/AuthProvider"
 
 
@@ -10,7 +10,6 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
     }
 
     const handleReviewSubmission = () => {
-        console.log('hii im')
         const name = document.getElementById("userName").value
         const review = document.getElementById("reviewDetails").value
         const rating = document.getElementById("rating").value
@@ -24,7 +23,6 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
         }
 
         console.log(userReview)
-
         fetch("http://localhost:5000/usersreview", 
         {
             method:"POST",
@@ -37,10 +35,10 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
           .then(res => res.json())
           .then(data =>{
             console.log(data)
-            // if(data.insertedId)
-            //   alert('booked successfully ')
+            if(data.insertedId ){
+                alert('booked successfully ')
+            } 
           })
-
     }
 
     return (
@@ -100,7 +98,7 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
                             <button onClick={() => handleUpdateModal(sx._id)} className=" btn btn-ghost btn-xs border-[1px] border-blue-600 bg-[#33334b] ">update Date</button>
                         </li>
                         <li>
-                            <button onClick={handleOpenReviewModal} className="btn btn-ghost btn-xs border-[1px] border-blue-600 bg-[#33334b]">Review</button>
+                            <button  onClick={handleOpenReviewModal} className="btn btn-ghost btn-xs border-[1px] border-blue-600 bg-[#33334b]"   >Review</button>
                            
                         </li>
                     </ul>

@@ -1,6 +1,8 @@
 import Banner from "./categoroies/Banner";
+import FeaturedRooms from "./categoroies/FeaturedRooms";
 import LocationMap from "./categoroies/LocationMap";
 import Newsletter from "./categoroies/Newsletter";
+import UserReviews from "./categoroies/UserReviews";
 
 
 const Home = () => {
@@ -11,6 +13,8 @@ const Home = () => {
             <Newsletter></Newsletter>
             <LocationMap></LocationMap>
             </div>
+            <FeaturedRooms></FeaturedRooms>
+            <UserReviews></UserReviews>
         </div>
     );
 };
