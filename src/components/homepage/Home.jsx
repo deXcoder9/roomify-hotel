@@ -7,7 +7,7 @@ import UserReviews from "./categoroies/UserReviews";
 
 const Home = () => {
     return (
-        <div className="bg-[#0e0f24] lg:max-w-[1440px] mx-auto">
+        <div className="bg-[#0e0f24] lg:max-w-[1440px] mx-auto -z-30">
             <Banner></Banner>
             <div className="flex justify-around items-center my-10">
             <Newsletter></Newsletter>

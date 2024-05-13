@@ -24,7 +24,8 @@ const RoomDetails = () => {
   const handleBookNow = () => [
     document.getElementById('my_modal_5').showModal()
   ]
-  const handleBookCOnfirmBtn = () => {
+  const handleBookCOnfirmBtn = (id) => {
+    console.log(id)
     bookedRoomTime = document.getElementById("bookedDate").value;
     bookedRoomData.bookedRoomDate = bookedRoomTime;
     fetch("http://localhost:5000/bookings", {
@@ -40,11 +41,22 @@ const RoomDetails = () => {
       if(data.insertedId)
         alert('booked successfully ')
     })
-  //   const bookedRoomDate = document.getElementById("bookedDate")
-  // console.log(bookedRoomDate.value)
-  // bookedRoomTime = document.getElementById("bookedDate").value;
+    
+    // updateing avability of the booked room
+    fetch(`http://localhost:5000/rooms/${id}`, {
+      method: "PATCH",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        availability: 'Unavailable',
+      })
+    } )
+    .then(res => res.json())
+    .then(data =>{
+      console.log(data)
+    })
 
-  // console.log(bookedRoomTime)
   }
   return (
     <div className='min-h-screen flex place-items-center'>
@@ -62,7 +74,7 @@ const RoomDetails = () => {
               <Link to="/rooms">
                 <button className='btn'>Go Back </button>
               </Link>
-              <button onClick={handleBookNow} className='btn'>Book now </button>
+              <button onClick={handleBookNow} disabled={room.availability === 'Unavailable' } className='btn'>Book now </button>
               <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                   <h3 className="font-bold text-lg">Hello!</h3>
@@ -72,7 +84,7 @@ const RoomDetails = () => {
                     <form method="dialog">
                       <div className='flex justify-between lg:w-[450px]  '>
                       <button className="btn">Close</button>
-                      <button onClick={handleBookCOnfirmBtn} className="btn">Confirm</button>
+                      <button onClick={() =>handleBookCOnfirmBtn(room._id)} className="btn">Confirm</button>
                       </div>
                     </form>
                   </div>
