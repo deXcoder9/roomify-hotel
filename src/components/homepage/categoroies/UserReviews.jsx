@@ -16,7 +16,7 @@ const UserReviews = () => {
     const [rr , setRR] = useState([])
 
   useEffect(() => {
-    fetch('https://roomify-assignment10.vercel.app/usersreview')
+    fetch('https://roomify-dexcoder.netlify.app/usersreview')
       .then(res => res.json())
       .then(data => {
         setReviews(data)

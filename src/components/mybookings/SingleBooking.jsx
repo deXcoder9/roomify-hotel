@@ -24,7 +24,7 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
         }
 
         // console.log(userReview)
-        fetch("https://roomify-assignment10.vercel.app/usersreview", 
+        fetch("https://roomify-dexcoder.netlify.app/usersreview", 
         {
             method:"POST",
             headers: {

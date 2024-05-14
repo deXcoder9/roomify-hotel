@@ -34,7 +34,7 @@ const handleBookNow = () => [
     bookedRoomTime = document.getElementById("bookedDate").value;
     bookedRoomData.bookedRoomDate = bookedRoomTime;
     
-    fetch("https://roomify-assignment10.vercel.app/bookings", {
+    fetch("https://roomify-dexcoder.netlify.app/bookings", {
       method:"POST",
       headers: {
         "Content-Type": "application/json"
@@ -57,7 +57,7 @@ const handleBookNow = () => [
     })
     
     // updateing avability of the booked room
-    fetch(`https://roomify-assignment10.vercel.app/rooms/${id}`, {
+    fetch(`https://roomify-dexcoder.netlify.app/rooms/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json"

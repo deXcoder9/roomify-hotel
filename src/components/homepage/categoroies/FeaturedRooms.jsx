@@ -7,7 +7,7 @@ const FeaturedRooms = () => {
   const [featuredRooms, setFeaturedRooms] = useState([])
 
   useEffect(() => {
-    fetch('https://roomify-assignment10.vercel.app/featuredrooms')
+    fetch('https://roomify-dexcoder.netlify.app/featuredrooms')
       .then(res => res.json())
       .then(data => {
         setFeaturedRooms(data)

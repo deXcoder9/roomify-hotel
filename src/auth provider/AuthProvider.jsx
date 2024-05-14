@@ -30,13 +30,13 @@ const AuthProvider = ({children}) => {
 
             // sfds
             if (currentUser) {
-                axios.post('https://roomify-assignment10.vercel.app/jwt', loggedUser, { withCredentials: true })
+                axios.post('https://roomify-dexcoder.netlify.app/jwt', loggedUser, { withCredentials: true })
                     .then(res => {
                         // console.log('token response', res.data);
                     })
             }
             else {
-                axios.post('https://roomify-assignment10.vercel.app/logout', loggedUser, {
+                axios.post('https://roomify-dexcoder.netlify.app/logout', loggedUser, {
                     withCredentials: true
                 })
                     .then(res => {
