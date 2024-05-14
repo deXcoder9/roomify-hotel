@@ -93,7 +93,7 @@ const UserBookings = () => {
                                     </label>
                                 </th>
                                 <th>Name</th>
-                                <th>Job</th>
+                                <th>Details</th>
                                 <th>Price</th>
                                 <th></th>
 

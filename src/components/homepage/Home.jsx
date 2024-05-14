@@ -10,17 +10,17 @@ import specialOffer from "../../assets/special-offer.png"
 const Home = () => {
     const openPopUp = () => {
         setTimeout(() => {
-            document.getElementById('my_modal_3').showModal();
+            // document.getElementById('my_modal_3').showModal();
         }, 500);
     }
     
     openPopUp();
     return (
-        <div className="bg-[#0e0f24] lg:max-w-[1440px] mx-auto -z-30">
+        <div className="bg-[#0e0f24] lg:max-w-[1440px] mx-auto -z-30 ">
             <Helmet>
                 <title>Home</title>
             </Helmet>
-            <div  className="">
+            {/* <div  className="">
                 <dialog  id="my_modal_3" className="modal">
                     <div className="modal-box">
                         <form method="dialog">
@@ -33,13 +33,19 @@ const Home = () => {
                         </div>
                     </div>
                 </dialog>
+            </div> */}
+            <Banner ></Banner>
+            <div className="mt-20">
+            <FeaturedRooms></FeaturedRooms>
             </div>
-            <Banner></Banner>
-            <div className="flex flex-col lg:flex-row justify-around items-center my-10 ">
+            <div className="text-center ">
+                    <h1 className="text-3xl pb-1">Stay Updated: Subscribe to Our Newsletter</h1>
+                    <p className="text-gray-300">Join our community for the latest updates, exclusive offers, and insider news delivered straight to your inbox.</p>
+                </div>
+            <div className="flex flex-col lg:flex-row justify-around items-center my-10 mb-20 ">
                 <Newsletter></Newsletter>
                 <LocationMap></LocationMap>
             </div>
-            <FeaturedRooms></FeaturedRooms>
             <UserReviews></UserReviews>
         </div>
     );

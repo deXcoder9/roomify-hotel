@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Link, useLoaderData, useParams } from 'react-router-dom'
 import { AuthContext } from '../../auth provider/AuthProvider'
 import { Helmet } from 'react-helmet'
+import Swal from "sweetalert2";
 
 const RoomDetails = () => {
   const {userInfo} = useContext(AuthContext) 
@@ -41,7 +42,15 @@ const RoomDetails = () => {
     .then(data =>{
       console.log(data)
       if(data.insertedId)
-        alert('booked successfully ')
+        Swal.fire({
+          title: "Success!",
+          text: "Room successfull booked",
+          icon: "success",
+        //   confirmButtonText: "Done",
+        });
+        setTimeout(() =>{
+            
+        }, 1000)
     })
     
     // updateing avability of the booked room

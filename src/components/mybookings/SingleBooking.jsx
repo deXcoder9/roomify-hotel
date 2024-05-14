@@ -1,5 +1,6 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { AuthContext } from "../../auth provider/AuthProvider"
+import Swal from "sweetalert2";
 
 
 const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModalDelete }) => {
@@ -36,7 +37,15 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
           .then(data =>{
             console.log(data)
             if(data.insertedId ){
-                alert('booked successfully ')
+                Swal.fire({
+                    title: "Success!",
+                    text: "reviewed successfull",
+                    icon: "success",
+                  //   confirmButtonText: "Done",
+                  });
+                  setTimeout(() =>{
+                      location.reload()
+                  }, 1000)
             } 
           })
     }
@@ -81,7 +90,7 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
                 </div>
             </td>
             <td>
-                {sx._id}
+                {sx.room_size}
                 <br />
                 <span className="badge badge-ghost badge-sm">{sx.bookedRoomDate}</span>
             </td>
@@ -105,12 +114,12 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
                 </div>
 
             <dialog id="reviewModalOpen" className="modal modal-bottom sm:modal-middle">
-                                <div className="modal-box grid place-items-center">
+                                <div className="modal-box grid place-items-center ">
                                     <form className="space-y-4">
-                                    <input type="text" name="name" disabled defaultValue={userInfo.displayName} id='userName' /> <br />
-                                    <input type="date" name="date" id="date" /> <br />
-                                    <input type="number" name="rating" id="rating" placeholder="Give a rating between 1-5" /> <br />
-                                    <textarea name="reviewDetails" id="reviewDetails" placeholder="Give a review"></textarea>
+                                    <input className="w-[250px] py-2 px-3 rounded-md " type="text" name="name" disabled defaultValue={userInfo.displayName} id='userName' /> <br />
+                                    <input className="w-[250px] py-2 px-3 rounded-md " type="date" name="date" id="date" /> <br />
+                                    <input className="w-[250px] py-2 px-3 rounded-md " type="number" name="rating" id="rating" placeholder="Give a rating between 1-5" /> <br />
+                                    <textarea className="w-[250px] py-2 px-3 rounded-md" name="reviewDetails" id="reviewDetails" placeholder="Give a review"></textarea>
                                     </form>
                                     <div className="modal-action">
                                         <form method="dialog" >
