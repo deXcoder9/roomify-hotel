@@ -8,13 +8,13 @@ import specialOffer from "../../assets/special-offer.png"
 
 
 const Home = () => {
-    // const openPopUp = () => {
-    //     setTimeout(() => {
-    //         document.getElementById('my_modal_3').showModal();
-    //     }, 500);
-    // }
+    const openPopUp = () => {
+        setTimeout(() => {
+            document.getElementById('my_modal_3').showModal();
+        }, 500);
+    }
     
-    // openPopUp();
+    openPopUp();
     return (
         <div className="bg-[#0e0f24] lg:max-w-[1440px] mx-auto -z-30">
             <Helmet>
@@ -24,7 +24,6 @@ const Home = () => {
                 <dialog  id="my_modal_3" className="modal">
                     <div className="modal-box">
                         <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
                             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         </form>
                         <div className="grid place-items-center">
