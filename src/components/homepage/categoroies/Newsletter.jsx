@@ -4,7 +4,7 @@ const Newsletter = () => {
     return (
         <div>
 
-<div className="parent-wrapper">
+<div className="parent-wrapper ">
   <span className="close-btn glyphicon glyphicon-remove"></span>
   <div className="subscribe-wrapper">
     <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>

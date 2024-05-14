@@ -1,0 +1,54 @@
+.roomCard {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .roomCard > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+  .roomCard figcaption {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    align-items: end;
+    justify-content: space-between;
+    /* font-family: sans-serif; */
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,#0e0f24ab);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -10px;
+  }
+  .roomCard:hover figcaption{
+    --_i: 0%;
+  }
+  .roomCard figcaption p {
+    color: white;
+  }
+  .roomCard:hover img {
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    .roomCard figcaption {
+     -webkit-mask: none;
+     color: #fff;
+    }
+  }
+  
+  .roomsCardContainer {
+  /* body { */
+    margin: 0;
+    /* min-height: 100vh; */
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    /* background: #425a52; */
+  }

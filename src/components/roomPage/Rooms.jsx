@@ -48,17 +48,19 @@ const handleBookFilter = (filter) => {
 };
 
   return (
-    <div className="lg:p-4 flex flex-col items-center ">
+    <div className="lg:p-4 flex flex-col  ">
       <Helmet>
         <title>Rooms</title>
       </Helmet>
-      <select defaultValue="all" id="listMenu" onChange={()=> getOptionValue()} className="select select-ghost w-full max-w-xs bg-black">
+      <div className="flex justify-end">
+      <select defaultValue="all" id="listMenu" onChange={()=> getOptionValue()} className="select select-ghost w-full max-w-[170px] bg-black border-[1px] border-blue-700">
         <option value="all" className="bg-transparent " > all </option>
         <option value="underHundred" className="bg-transparent " >under $100 </option>
         <option value="underTwohundred" className="bg-transparent">under $200</option>
         <option value="underFourhundred" className="bg-transparent">under $400</option>
       </select>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:space-x-7 lg:space-y-5 space-y-6 md:space-x-3">
+      </div>
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:space-x-7 lg:space-y-5 space-y-6 md:space-x-3">
         {
           displayRooms.map(room => <SingleRoom key={room._id} room={room} ></SingleRoom>)
         }

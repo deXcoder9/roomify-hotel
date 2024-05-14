@@ -29,6 +29,7 @@ const RoomDetails = () => {
     console.log(id)
     bookedRoomTime = document.getElementById("bookedDate").value;
     bookedRoomData.bookedRoomDate = bookedRoomTime;
+    
     fetch("http://localhost:5000/bookings", {
       method:"POST",
       headers: {
