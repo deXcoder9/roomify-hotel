@@ -13,6 +13,7 @@ const RoomDetails = () => {
 
   let bookedRoomTime ;
   
+if(userInfo?.email){
   const bookedRoomData = {
     email: userInfo.email,
     room_size: specificRoom[0].room_size,
@@ -22,10 +23,12 @@ const RoomDetails = () => {
     room_availability: specificRoom[0].availability,
   }
   console.log(bookedRoomData)
+}
 
-  const handleBookNow = () => [
-    document.getElementById('my_modal_5').showModal()
-  ]
+const handleBookNow = () => [
+  document.getElementById('my_modal_5').showModal()
+]
+
   const handleBookCOnfirmBtn = (id) => {
     console.log(id)
     bookedRoomTime = document.getElementById("bookedDate").value;
@@ -88,7 +91,7 @@ const RoomDetails = () => {
               <Link to="/rooms">
                 <button className='btn'>Go Back </button>
               </Link>
-              <button onClick={handleBookNow} disabled={room.availability === 'Unavailable' } className='btn'>Book now </button>
+              <button onClick={handleBookNow}  disabled={room.availability === 'Unavailable' || !userInfo?.email } className='btn'>Book now </button>
               <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                   <h3 className="font-bold text-lg">Hello!</h3>
@@ -98,7 +101,7 @@ const RoomDetails = () => {
                     <form method="dialog">
                       <div className='flex justify-between lg:w-[450px]  '>
                       <button className="btn">Close</button>
-                      <button onClick={() =>handleBookCOnfirmBtn(room._id)} className="btn">Confirm</button>
+                      <button onClick={  () =>handleBookCOnfirmBtn(room._id)} className="btn">Confirm</button>
                       </div>
                     </form>
                   </div>
