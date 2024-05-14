@@ -15,7 +15,7 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
         const review = document.getElementById("reviewDetails").value
         const rating = document.getElementById("rating").value
         const date = document.getElementById("date").value
-        console.log(review, rating, date)
+        // console.log(review, rating, date)
         const userReview = {
             name,
             reviewText: review,
@@ -23,8 +23,8 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
             date: date
         }
 
-        console.log(userReview)
-        fetch("http://localhost:5000/usersreview", 
+        // console.log(userReview)
+        fetch("https://roomify-assignment10.vercel.app/usersreview", 
         {
             method:"POST",
             headers: {
@@ -35,7 +35,7 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
         )
           .then(res => res.json())
           .then(data =>{
-            console.log(data)
+            // console.log(data)
             if(data.insertedId ){
                 Swal.fire({
                     title: "Success!",

@@ -16,26 +16,26 @@ const SignIn = () => {
 
     const email = form.get("email");
     const password = form.get("password");
-    console.log(email, password);
+    // console.log(email, password);
 
     if(toggle){
-      console.log('account creation')
+      // console.log('account creation')
       handleRegistrationAuth(email, password)
       .then((result) =>{
         setTimeout(function () {
           window.location.href = "/";
       }, 500);
-        console.log(result.user)
+        // console.log(result.user)
       }).catch(error => console.log(error.message))
     }else{
-      console.log('account logging')
+      // console.log('account logging')
       handleLoginAuth(email, password)
       .then(result => {
         alert('User Logged In')
         setTimeout(function () {
           window.location.href = "/";
       }, 500);
-        console.log(result.user)
+        // console.log(result.user)
       }).catch(error => console.log(error.message))
     }
   };
@@ -52,7 +52,7 @@ const SignIn = () => {
         setTimeout(function () {
           window.location.href = "/";
       }, 500);
-        console.log("google Login:", result.user);
+        // console.log("google Login:", result.user);
       })
       .catch((error) => console.log(error));
   };

@@ -7,7 +7,7 @@ const Rooms = () => {
   const [displayRooms, setDisplayRooms] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/rooms')
+    fetch('https://roomify-assignment10.vercel.app/rooms')
       .then(res => res.json())
       // .then(data => console.log(data))
       .then(data => {
@@ -22,7 +22,7 @@ const Rooms = () => {
     // console.log(optionName)
 };
 const handleBookFilter = (filter) => {
-  console.log(filter);
+  // console.log(filter);
 
   if (filter === "all") {
       setDisplayRooms(rooms);

@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       {
         path: '/roomDetails/:id',
         element: <RoomDetails></RoomDetails>,
-        loader: () => fetch("http://localhost:5000/rooms")
+        loader: () => fetch("https://roomify-assignment10.vercel.app/rooms")
       },
       {
         path: '/bookings',

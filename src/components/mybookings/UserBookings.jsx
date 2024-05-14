@@ -9,7 +9,7 @@ const UserBookings = () => {
     const { userInfo } = useContext(AuthContext)
     const [bookings, setBookings] = useState([]);
 
-    const url = `http://localhost:5000/bookings?email=${userInfo?.email}`;
+    const url = `https://roomify-assignment10.vercel.app/bookings?email=${userInfo?.email}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -26,7 +26,7 @@ const UserBookings = () => {
     const handleDeleteBookedRoom = () => {
         const newId = currentDeleteId;
 
-        fetch(`http://localhost:5000/bookings/${newId}`, {
+        fetch(`https://roomify-assignment10.vercel.app/bookings/${newId}`, {
             method: "DELETE"
         })
             .then(res => res.json())
@@ -46,9 +46,9 @@ const UserBookings = () => {
         const newId = currentId;
         // console.log(newId)
         const bookedRoomTime = document.getElementById("updatedBookedDate").value;
-        console.log(bookedRoomTime);
+        // console.log(bookedRoomTime);
 
-        fetch(`http://localhost:5000/bookings/${newId}`, {
+        fetch(`https://roomify-assignment10.vercel.app/bookings/${newId}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"
@@ -59,7 +59,7 @@ const UserBookings = () => {
         })
            .then(res => res.json())
            .then(data => {
-            console.log(data)
+            // console.log(data)
             // console.log(data)
                 if (data.modifiedCount ) {
                     Swal.fire({

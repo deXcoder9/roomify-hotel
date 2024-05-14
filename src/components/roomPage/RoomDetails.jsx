@@ -22,7 +22,7 @@ if(userInfo?.email){
     room_description: specificRoom[0].description,
     room_availability: specificRoom[0].availability,
   }
-  console.log(bookedRoomData)
+  // console.log(bookedRoomData)
 }
 
 const handleBookNow = () => [
@@ -30,11 +30,11 @@ const handleBookNow = () => [
 ]
 
   const handleBookCOnfirmBtn = (id) => {
-    console.log(id)
+    // console.log(id)
     bookedRoomTime = document.getElementById("bookedDate").value;
     bookedRoomData.bookedRoomDate = bookedRoomTime;
     
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://roomify-assignment10.vercel.app/bookings", {
       method:"POST",
       headers: {
         "Content-Type": "application/json"
@@ -43,7 +43,7 @@ const handleBookNow = () => [
     })
     .then(res => res.json())
     .then(data =>{
-      console.log(data)
+      // console.log(data)
       if(data.insertedId)
         Swal.fire({
           title: "Success!",
@@ -57,7 +57,7 @@ const handleBookNow = () => [
     })
     
     // updateing avability of the booked room
-    fetch(`http://localhost:5000/rooms/${id}`, {
+    fetch(`https://roomify-assignment10.vercel.app/rooms/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json"
@@ -68,7 +68,7 @@ const handleBookNow = () => [
     } )
     .then(res => res.json())
     .then(data =>{
-      console.log(data)
+      // console.log(data)
     })
 
   }
