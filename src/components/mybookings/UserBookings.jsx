@@ -9,7 +9,7 @@ const UserBookings = () => {
     const { userInfo } = useContext(AuthContext)
     const [bookings, setBookings] = useState([]);
 
-    const url = `https://roomify-dexcoder.netlify.app/bookings?email=${userInfo?.email}`;
+    const url = `https://roomify-assignment10.vercel.app/bookings?email=${userInfo?.email}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -26,7 +26,7 @@ const UserBookings = () => {
     const handleDeleteBookedRoom = () => {
         const newId = currentDeleteId;
 
-        fetch(`https://roomify-dexcoder.netlify.app/bookings/${newId}`, {
+        fetch(`https://roomify-assignment10.vercel.app/bookings/${newId}`, {
             method: "DELETE"
         })
             .then(res => res.json())
@@ -48,7 +48,7 @@ const UserBookings = () => {
         const bookedRoomTime = document.getElementById("updatedBookedDate").value;
         // console.log(bookedRoomTime);
 
-        fetch(`https://roomify-dexcoder.netlify.app/bookings/${newId}`, {
+        fetch(`https://roomify-assignment10.vercel.app/bookings/${newId}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"

@@ -34,7 +34,7 @@ const handleBookNow = () => [
     bookedRoomTime = document.getElementById("bookedDate").value;
     bookedRoomData.bookedRoomDate = bookedRoomTime;
     
-    fetch("https://roomify-dexcoder.netlify.app/bookings", {
+    fetch("https://roomify-assignment10.vercel.app/bookings", {
       method:"POST",
       headers: {
         "Content-Type": "application/json"
@@ -57,7 +57,7 @@ const handleBookNow = () => [
     })
     
     // updateing avability of the booked room
-    fetch(`https://roomify-dexcoder.netlify.app/rooms/${id}`, {
+    fetch(`https://roomify-assignment10.vercel.app/rooms/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json"
@@ -91,7 +91,11 @@ const handleBookNow = () => [
               <Link to="/rooms">
                 <button className='btn'>Go Back </button>
               </Link>
-              <button onClick={handleBookNow}  disabled={room.availability === 'Unavailable' || !userInfo?.email } className='btn'>Book now </button>
+              {
+                userInfo?.email ? <button onClick={handleBookNow}  disabled={room.availability === 'Unavailable' || !userInfo?.email } className='btn'>Book now </button>
+                :
+               <Link to="/signin"> <button   className='btn'>Sign up to book! </button> </Link>
+              }
               <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                   <h3 className="font-bold text-lg">Hello!</h3>

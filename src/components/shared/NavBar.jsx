@@ -2,6 +2,8 @@ import { Link, Navigate } from "react-router-dom";
 import logo from '../../assets/logo.png'
 import { useContext } from "react";
 import { AuthContext } from "../../auth provider/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const NavBar = () => {
   const { userInfo, handleSignOut } = useContext(AuthContext)
@@ -9,6 +11,7 @@ const NavBar = () => {
   const handleLogout = () => {
     handleSignOut()
      .then(() => {
+      toast('successfully sign out')
         setTimeout(function () {
           window.location.href = "/";
       }, 1000);
@@ -34,11 +37,12 @@ const NavBar = () => {
           {
             userInfo?.email ?
             <li onClick={handleLogout} className="text-[15px] hover:text-white " ><a>Logout</a></li>
+            
           
               :
               <li><Link to="/signin" className="text-[15px] hover:text-white ">Sign Up</Link></li>
            }
-
+ <ToastContainer />
         </ul>
       </div>
     </div>

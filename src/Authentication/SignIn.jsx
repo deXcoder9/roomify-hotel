@@ -5,10 +5,13 @@ import "./signin.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../auth provider/AuthProvider";
 import { Helmet } from "react-helmet";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignIn = () => {
   const { handleGoogleLogin, handleRegistrationAuth, handleLoginAuth } = useContext(AuthContext);
   const [toggle, setToggle] = useState(true);
+  const [error, setError] = useState();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -19,22 +22,28 @@ const SignIn = () => {
     // console.log(email, password);
 
     if(toggle){
-      // console.log('account creation')
+      setError("")
+      if(password.length < 6){
+        setError('Password must be at least 6 characters')
+        return;
+      }
       handleRegistrationAuth(email, password)
       .then((result) =>{
+        toast('successfully logged in')
         setTimeout(function () {
           window.location.href = "/";
-      }, 500);
+      }, 800);
         // console.log(result.user)
-      }).catch(error => console.log(error.message))
+      }).catch(error => setError(error.message))
     }else{
       // console.log('account logging')
       handleLoginAuth(email, password)
       .then(result => {
-        alert('User Logged In')
+        // alert('User Logged In')
+        toast('successfully logged in')
         setTimeout(function () {
           window.location.href = "/";
-      }, 500);
+      }, 800);
         // console.log(result.user)
       }).catch(error => console.log(error.message))
     }
@@ -48,10 +57,11 @@ const SignIn = () => {
   const handleWithGoogleLogin = () => {
     handleGoogleLogin()
       .then((result) => {
-        alert("logged in through google");
+        toast('successfully logged in')
+        // alert("logged in through google");
         setTimeout(function () {
           window.location.href = "/";
-      }, 500);
+      }, 800);
         // console.log("google Login:", result.user);
       })
       .catch((error) => console.log(error));
@@ -100,6 +110,7 @@ const SignIn = () => {
           <h1 className="text-3xl ">Sign in</h1>
         )}
         <form onSubmit={handleLogin} className="lg:w-[400px] mt-10">
+        <ToastContainer />
           <div className="form-control">
             <label className="label">
               <span className="label-text text-white ">Email</span>
@@ -123,6 +134,7 @@ const SignIn = () => {
               className="signinPlaceholder input input-bordered bg-[#33334b]"
               required
             />
+            <p className="text-xs pt-1 text-red-500">{error}  </p>
           </div>
           <div className="form-control mt-6">
             {toggle ? (

@@ -24,7 +24,7 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
         }
 
         // console.log(userReview)
-        fetch("https://roomify-dexcoder.netlify.app/usersreview", 
+        fetch("https://roomify-assignment10.vercel.app/usersreview", 
         {
             method:"POST",
             headers: {
@@ -63,12 +63,12 @@ const SingleBooking = ({ sx, handleUpdateModal, handleDeleteBookedRoom, openModa
                     <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                         <div className="modal-box">
                             <h3 className="font-bold text-lg">Hello!</h3>
-                            <p className="py-4">Press ESC key or click the button below to close</p>
+                            <p className="py-4">Are you sure that you want to cancel the booked room?</p>
                             <div className="modal-action">
                                 <form method="dialog">
                                     {/* if there is a button in form, it will close the modal */}
-                                    <div>
-                                        <button className="btn">Close</button>
+                                    <div >
+                                        <button className="btn mr-10">Close</button>
                                         <button onClick={() => handleDeleteBookedRoom()} className="btn">Confirm</button>
                                     </div>
                                 </form>

@@ -7,7 +7,7 @@ const Rooms = () => {
   const [displayRooms, setDisplayRooms] = useState([]);
 
   useEffect(() => {
-    fetch('https://roomify-dexcoder.netlify.app/rooms')
+    fetch('https://roomify-assignment10.vercel.app/rooms')
       .then(res => res.json())
       // .then(data => console.log(data))
       .then(data => {
