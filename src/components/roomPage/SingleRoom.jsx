@@ -10,7 +10,7 @@ const SingleRoom = ({room}) => {
       <div className='roomsCardContainer '>
 
       <figure className='roomCard'>
-    <img className='max-w-[430px] h-[270px]'  src={room_image} alt="Mountains" />
+    <img className='max-w-[430px] h-[270px]'  src={room_image} alt="rooms" />
     
     <figcaption >
       <p className='flex items-center space-x-1'> <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#5b2cc9" d="m4 9l8-6l8 6zm0 12v-4h9v4zm11 0v-4h5v4zM4 15v-4h5v4zm7 0v-4h9v4z"></path></svg></span> <span>{availability}</span> </p>

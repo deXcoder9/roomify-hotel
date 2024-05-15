@@ -45,7 +45,7 @@ const SignIn = () => {
           window.location.href = "/";
       }, 800);
         // console.log(result.user)
-      }).catch(error => console.log(error.message))
+      }).catch(error => setError(error.message))
     }
   };
 
@@ -64,7 +64,7 @@ const SignIn = () => {
       }, 800);
         // console.log("google Login:", result.user);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => setError(error));
   };
   return (
     <div className=" min-h-screen flex justify-center  ">

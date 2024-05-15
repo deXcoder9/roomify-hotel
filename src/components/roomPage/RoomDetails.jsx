@@ -9,19 +9,21 @@ const RoomDetails = () => {
   const rooms = useLoaderData()
   const { id } = useParams();
   const specificRoom = rooms.filter(x => x._id == id)
-  // console.log(userInfo)
+  // console.log(specificRoom)
 
   let bookedRoomTime ;
   
-if(userInfo?.email){
+
   const bookedRoomData = {
-    email: userInfo.email,
+    room_id: specificRoom[0].room_id,
+    name:specificRoom[0].name,
+    email: userInfo?.email,
     room_size: specificRoom[0].room_size,
     room_image: specificRoom[0].room_image,
     room_price: specificRoom[0].price,
     room_description: specificRoom[0].description,
     room_availability: specificRoom[0].availability,
-  }
+  
   // console.log(bookedRoomData)
 }
 
@@ -30,6 +32,10 @@ const handleBookNow = () => [
 ]
 
   const handleBookCOnfirmBtn = (id) => {
+
+
+
+    
     // console.log(id)
     bookedRoomTime = document.getElementById("bookedDate").value;
     bookedRoomData.bookedRoomDate = bookedRoomTime;
@@ -80,7 +86,7 @@ const handleBookNow = () => [
       {
         specificRoom.map(room => <div key={room._id} className='flex place-items-center space-x-12 p-10'>
           <div className='w-[]'>
-            <img src={room.room_image} className='rounded-xl' />
+            <img src={room.room_image} alt='room' className='rounded-xl' />
           </div>
           <div className='w-[900px]'>
             <p>Size: {room.room_size}</p>
