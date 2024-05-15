@@ -10,7 +10,7 @@ import specialOffer from "../../assets/special-offer.png"
 const Home = () => {
     const openPopUp = () => {
         setTimeout(() => {
-            // document.getElementById('my_modal_3').showModal();
+            document.getElementById('my_modal_3').showModal();
         }, 500);
     }
     
@@ -20,7 +20,7 @@ const Home = () => {
             <Helmet>
                 <title>Home</title>
             </Helmet>
-            {/* <div  className="">
+            <div  className="">
                 <dialog  id="my_modal_3" className="modal">
                     <div className="modal-box">
                         <form method="dialog">
@@ -33,7 +33,7 @@ const Home = () => {
                         </div>
                     </div>
                 </dialog>
-            </div> */}
+            </div>
             <Banner ></Banner>
             <div className="mt-20">
             <FeaturedRooms></FeaturedRooms>
