@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { Link, useLoaderData, useParams } from 'react-router-dom'
 import { AuthContext } from '../../auth provider/AuthProvider'
 import { Helmet } from 'react-helmet'
